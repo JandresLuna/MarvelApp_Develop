@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "230810669076",
+    "project_id": "marvelapp-parcial",
+    "storage_bucket": "marvelapp-parcial.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:230810669076:android:4656b5ad4e28b5cc89d701",
+        "android_client_info": {
+          "package_name": "com.moviles.marvelapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9cC8a6PLCzwLwCfDr7tieRek4jEiwafE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
