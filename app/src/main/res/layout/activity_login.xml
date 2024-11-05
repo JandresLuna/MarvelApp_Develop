@@ -1,16 +1,13 @@
-
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    tools:context=".LoginActivity"
     android:orientation="vertical"
-    tools:context=".SignUpActivity"
-    android:background="@drawable/spidermanbackground">
-
+    android:background="@drawable/login_background">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -39,71 +36,39 @@
 
 
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textSize="36dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/bayon"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_marginTop="310dp"/>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:gravity="center_horizontal|center_vertical">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_marginTop="210dp">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal|center_vertical"
-                android:fontFamily="@font/bayon"
-                android:text="SIGN UP"
-                android:textColor="@color/white"
-                android:textSize="36dp" />
-
-        </LinearLayout>
-
         <EditText
-            android:id="@+id/edt_name"
-            android:layout_marginTop="45dp"
+            android:id="@+id/edt_mail"
             android:layout_width="279dp"
             android:layout_height="42dp"
-            android:hint="NAME"
-            android:fontFamily="@font/bebas"
-            android:padding="8dp"
-            android:background="@drawable/edit_text_background"
-            android:textColorHint="#857F7F"
-            />
-
-        <EditText
-            android:id="@+id/edt_date"
-            android:layout_width="279dp"
-            android:layout_height="42dp"
-            android:hint="Date"
-            android:inputType="date"
+            android:hint="E-Mail"
             android:fontFamily="@font/bebas"
             android:padding="8dp"
             android:layout_marginTop="22dp"
             android:background="@drawable/edit_text_background"
             android:textColorHint="#857F7F"
             />
-
         <EditText
-            android:id="@+id/edt_email"
+            android:id="@+id/edt_pass"
             android:layout_width="279dp"
             android:layout_height="42dp"
-            android:hint="E-MAIL"
-            android:fontFamily="@font/bebas"
-            android:padding="8dp"
-            android:layout_marginTop="22dp"
-            android:background="@drawable/edit_text_background"
-            android:textColorHint="#857F7F"
-            />
-
-        <EditText
-            android:id="@+id/edt_password"
-            android:layout_width="279dp"
-            android:layout_height="42dp"
-            android:hint="PASSWORD"
+            android:hint="Password"
+            android:inputType="textPassword"
             android:fontFamily="@font/bebas"
             android:padding="8dp"
             android:layout_marginTop="22dp"
@@ -112,16 +77,42 @@
             />
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btn_signup"
             android:layout_width="279dp"
             android:layout_height="42dp"
             android:layout_marginTop="22dp"
-            android:text="SIGN UP"
+            android:text="LOGIN"
             android:textSize="20sp"
             android:textColor="@color/black"
             android:fontFamily="@font/bebas"
             android:background="@drawable/button_background"
             />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="horizontal"
+            android:layout_marginTop="54dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New to our app?"
+                android:textSize="13sp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/bayon"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="71dp"
+                android:layout_height="27dp"
+                android:text="SIGN UP"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/bebas"
+                android:background="@drawable/button_background"
+                android:layout_marginLeft="16dp"
+                />
+        </LinearLayout>
 
     </LinearLayout>
 
@@ -134,7 +125,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="16dp"
-            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_gravity="center"
             android:layout_marginBottom="15dp"
             android:fontFamily="@font/bebas"
             android:text="all rights reserved by maRvel"
@@ -143,6 +134,8 @@
             android:textStyle="bold" />
 
     </LinearLayout>
+
+
 
 
 
