@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SignUpActivity"
+    android:background="@drawable/spidermanbackground">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="95.54dp"
+            android:layout_height="50dp"
+            android:src="@drawable/logo"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="16dp"
+            android:layout_marginLeft="90dp"
+            android:textSize="15dp"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/bebas"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:text="YOU CAN BE THE HEROE OF YOUR STORY"/>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal|center_vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="210dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:fontFamily="@font/bayon"
+                android:text="SIGN UP"
+                android:textColor="@color/white"
+                android:textSize="36dp" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/edt_name"
+            android:layout_marginTop="45dp"
+            android:layout_width="279dp"
+            android:layout_height="42dp"
+            android:hint="NAME"
+            android:fontFamily="@font/bebas"
+            android:padding="8dp"
+            android:background="@drawable/edit_text_background"
+            android:textColorHint="#857F7F"
+            />
+
+        <EditText
+            android:id="@+id/edt_date"
+            android:layout_width="279dp"
+            android:layout_height="42dp"
+            android:hint="Date"
+            android:inputType="date"
+            android:fontFamily="@font/bebas"
+            android:padding="8dp"
+            android:layout_marginTop="22dp"
+            android:background="@drawable/edit_text_background"
+            android:textColorHint="#857F7F"
+            />
+
+        <EditText
+            android:id="@+id/edt_email"
+            android:layout_width="279dp"
+            android:layout_height="42dp"
+            android:hint="E-MAIL"
+            android:fontFamily="@font/bebas"
+            android:padding="8dp"
+            android:layout_marginTop="22dp"
+            android:background="@drawable/edit_text_background"
+            android:textColorHint="#857F7F"
+            />
+
+        <EditText
+            android:id="@+id/edt_password"
+            android:layout_width="279dp"
+            android:layout_height="42dp"
+            android:hint="PASSWORD"
+            android:fontFamily="@font/bebas"
+            android:padding="8dp"
+            android:layout_marginTop="22dp"
+            android:background="@drawable/edit_text_background"
+            android:textColorHint="#857F7F"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_signup"
+            android:layout_width="279dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="22dp"
+            android:text="SIGN UP"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/bebas"
+            android:background="@drawable/button_background"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="16dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginBottom="15dp"
+            android:fontFamily="@font/bebas"
+            android:text="all rights reserved by maRvel"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
